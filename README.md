@@ -1,2 +1,0 @@
-# MidAs
-Web Solutions
