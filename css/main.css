@@ -21,8 +21,22 @@
     letter-spacing: 0.1em;
 
   }
+
+  #header .get-started
+  {
+    border-color: #4ABDAC;
+    color: #4ABDAC;
+  }
+
+  #header .get-started:hover
+  {
+    border-color: #4ABDAC;
+    background-color: #4ABDAC;
+    color: #fff;
+  }
+
   .navbar {
-    box-shadow: 2px 2px 5px #28a745;
+    box-shadow: 2px 2px 5px #4ABDAC;
 
     background: #f3f3f3; }
 
@@ -36,7 +50,7 @@
   #service
   {
     height: 1900px;
-    background: #f3f3f3;
+    background: #4ABDAC;
   }
   .mt-100
   {
