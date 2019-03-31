@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono');
+
   body{
     margin: 0;
     padding: 0;
     overflow-x:hidden;
   }
+
+
+  /* --------------------------------
+  ============= Header Section =============
+  ---------------------------------*/
+
 
   #header
   {
@@ -153,21 +160,13 @@
 
   }
 
-  /* #header .get-started
-  {
-    border-color: #4ABDAC;
-    color: #4ABDAC;
-  }
+  /* --------------------------------
+  ============= Navbar =============
+  ---------------------------------*/
 
-  #header .get-started:hover
-  {
-    border-color: #4ABDAC;
-    background-color: #4ABDAC;
-    color: #fff;
-  } */
 
   .navbar {
-    box-shadow: 2px 2px 5px #4ABDAC;
+    box-shadow: 2px 2px 5px #52c234;
 
     background: #f3f3f3; }
 
@@ -176,6 +175,11 @@
       font-size: 1.4rem;
       padding-right: 1.4rem;
   }
+
+
+  /* --------------------------------
+  ============= Service Section =============
+  ---------------------------------*/
 
 
   #service
