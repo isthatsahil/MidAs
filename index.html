@@ -9,19 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>WebSittors</title>
   </head>
   <body>
   <!--header-start-->
     <header class="header" id="header">
+     <div class="overlay">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 header-content">
             <h1 class="mb-4">Welcome To WebSittors</h1>
             <p class="mb-4">We are a digital agency that loves crafting beautiful websites and teaching.</p>
             <a class="get-started  btn btn-outline-success btn-lg" data-scroll href="#service" role="button" >Get Started</a>
           </div>
         </div>
+      </div>
       </div>
     </header>
 	<!--header-end-->
@@ -66,13 +69,40 @@
           </div>
         </div>
         <div class="row py-5">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col" style="padding:0"><i class="fa fa-paw"></i></div>
-              <div class="col" style="padding:0"><h5>branding</h5></div>
+          <div class="col-lg-4">
+            <div class="service-list pt-3" data-aos="fade-right" data-aos-duration="1000">
+              <div class="service-list-col1 mb-3">
+                <i class="fa fa-paw  "></i>
+              </div>
+              <div class="service-list-col2 mb-3">
+                <h4>branding &amp; identity</h4>
+                <p class="text-muted">Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+              </div>
+              <div class="service-list-col1 mb-3">
+                <i class="fas fa-cog  "></i>
+              </div>
+              <div class="service-list-col2 mb-3">
+                <h4>web development</h4>
+                <p class="text-muted">Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+              </div>
+              <div class="service-list-col1  mb-3">
+                <i class="fab fa-android  "></i>
+              </div>
+              <div class="service-list-col2 mb-3">
+                <h4>mobile design</h4>
+                <p class="text-muted">Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+              </div>
+              <div class="service-list-col1 mb-3">
+                <i class="fas fa-medkit  "></i>
+              </div>
+              <div class="service-list-col2 mb-3">
+                <h4>24/7 Support</h4>
+                <p class="text-muted">Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6" data-aos="zoom-in-left" data-aos-duration="2000">
             <img src="image/imac.png" class="img-fluid d-lg-block" alt="">
           </div>
         </div>
@@ -96,12 +126,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js\active.js"></script>
     <script type="text/javascript">
+
+    //Smooth Scroll
     const scroll = new SmoothScroll('a[href*="#"]', {
       speed: 1500
     });
 
+    // AOS Init
+    AOS.init();
     </script>
 
 </body>
