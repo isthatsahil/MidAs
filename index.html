@@ -6,24 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css\main.css">
     <link rel="stylesheet" href="css\preloader.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>WebSittors</title>
+    <title>Thirsty Scholars</title>
   </head>
   <body >
-   <!--  Preloader  -->
-
-     <div class="preloader loading loader" id="loader-box">
-          <span class="slice"></span>
-          <span class="slice"></span>
-          <span class="slice"></span>
-          <span class="slice"></span>
-          <span class="slice"></span>
-          <span class="slice"></span>
-     </div>
-   <!--  Preloader-end  -->
 
   <!--header-start-->
     <header class="header" id="header">
@@ -31,7 +21,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 header-content">
-            <h1 class="mb-4">Welcome To WebSittors</h1>
+            <h1 class="mb-4 ">Welcome To Thirsty Scholars</h1>
             <!-- <p class="mb-5 ">We are a digital agency that loves crafting beautiful websites and teaching.</p> -->
             <div class="content mb-3">
                <div class="slider-wrapper">
@@ -58,11 +48,11 @@
 	<!--header-end-->
 
   <!-- Sticky Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top py-4  " id="main-nav">
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top py-3  " id="main-nav">
       <div class="container">
         <a href="#home" class="navbar-brand">
           <img src="image/small-logo.png" width="50" height="50" alt="">
-          <h3 class="d-inline align-middle">WebSittors</h3>
+          <h4 class="d-inline align-middle">Thirsty Scholars</h4>
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
@@ -77,16 +67,29 @@
               Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Websites</a>
-                <a class="dropdown-item" href="#">Coaching</a>
+                <a class="dropdown-item" href="404.html">Websites</a><hr>
+                <a class="dropdown-item" href="404.html">Coaching</a><hr>
                 <a class="dropdown-item" href="photography.html">PhotoShoot</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a href="#authors" class="nav-link">Contact</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-item">
+                  <a href="404.html" class="btn btn-success ml-auto d-block">Sign In</a>
+                  <small class="text-muted">New Customer?</small><a href="">Start here</a>
+                </div>
+
+                 <hr>
+                <a class="dropdown-item" href="404.html">Your Account</a>
+                <a class="dropdown-item" href="404.html">Wishlist</a>
+
+              </div>
             </li>
             <li class="nav-item">
-              <a href="#login" class="nav-link">Login/Register</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -148,20 +151,158 @@
    <!--   Service-end -->
 
    <!--               -->
-    <section>
+    <section id="featured" class=" py-5 ">
+      <div class="container py-5 mb-3">
+        <div class="row">
+          <div class="col-lg-8">
+             <div class="featured-title text-center">
+              <h3 class="display-4">Featured Works</h3>
+
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+
+            <img src="image\web.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <!-- <span class="blog-slider__code">26 December 2019</span> -->
+            <div class="blog-slider__title">Websites</div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+            <a href="#" class="blog-slider__button">Read more</a>
+          </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <!-- <span class="blog-slider__code">26 December 2019</span> -->
+            <div class="blog-slider__title"> Teaching &amp; Mentoring</div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+            <a href="#" class="blog-slider__button">Read more</a>
+          </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <!-- <span class="blog-slider__code">26 December 2019</span> -->
+            <div class="blog-slider__title">PhotoShoot</div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+            <a href="photography.html" class="blog-slider__button">Read more</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="blog-slider__pagination"></div>
+    </div>
 
     </section>
-   <!--          -end -->
+   <!-- Featured section-end -->
 
+   <!-- Business Section -->
+     <section id="business">
+       <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <!-- <a href="#" class="video" data-video="https://www.youtube.com/embed/HnwsG9a5riA" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a> -->
+            <h1>LET'S TALK BUSINESS</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Business Section-end -->
 
+   <!-- Contact Footer -->
+   <section class="main-section contact" id="contact">
+    <div class="row  mb-3">
+      <div class="col-lg-8">
+        <div class="contact-title text-left ml-3">
+           <h3 class="display-4 mr-auto ml-0" style="font-family: 'Poppins', sans-serif;">Get In Touch</h3>
+        </div>
+      </div>
+    </div>
+			<div class="row">
 
+				<div class="col-lg-6 col-sm-5 ">
 
+					<div class="form">
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+								<div class="validation"></div>
+							</div>
+        		</form>
+            <div class="text-center f-button">
+                <button type="submit" >
+                  <p>Send</p>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+                  M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path>
+                  </svg>
+                </button>
+            </div>
+					</div>
+				</div>
+        <div class="col-lg-6 col-sm-7 t">
+          <div class="contact-info-box address clearfix">
+            <h3><i class="fas fa-map-marker-alt"></i>Address:</h3>
+            <span>KP-9C<br>KIIT University, Bhubanewar, 751024.</span>
+          </div>
+          <div class="contact-info-box phone clearfix">
+            <h3><i class="fas fa-phone"></i>Phone:</h3>
+            <span>99-xxx-xxx-39</span>
+          </div>
+          <div class="contact-info-box email clearfix">
+            <h3><i class="fas fa-pencil-alt"></i>email:</h3>
+            <span>midas_business#gmail.com</span>
+          </div>
+          <div class="contact-info-box hours clearfix">
+            <h3><i class="far fa-clock"></i>Hours:</h3>
+            <span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
+          </div>
+          <ul class="social-link">
+            <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li class="dribbble"><a href="#"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+			</div>
+		</section>
+   <!-- Contact Footer-end -->
 
+   <footer class="footer">
+ 		<div class="container">
+ 			<div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
+ 			<span class="copyright">&copy; Thirsty Scholars. All Rights Reserved</span>
+ 		</div>
+ 	</footer>
 
-
-
-
-
+ <!--   JavaScript  Externals Files  -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -169,6 +310,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js\preloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script type="text/javascript">
 
     //Smooth Scroll
@@ -185,7 +327,27 @@
     // overlay.style.display = 'none';
     // });
 
+    var swiper = new Swiper('.blog-slider', {
+              spaceBetween: 30,
+              effect: 'fade',
+              loop: true,
+              mousewheel: {
+                invert: false,
+              },
+              // autoHeight: true,
+              pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+              }
+            });
 
+
+            $('button').click(function() {
+  $(this).toggleClass('clicked');
+  $('button p').text(function(i, text) {
+    return text === "Sent!" ? "Send" : "Sent!";
+  });
+});
     // AOS Init
     AOS.init();
     </script>
