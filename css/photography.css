@@ -356,6 +356,10 @@ img {
 
 }
 
+.media ul li .fb:hover{
+    transform: scale(360deg);
+}
+
 .watch {
     position: fixed;
     bottom: 0;
