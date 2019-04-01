@@ -229,16 +229,13 @@ body{
   .sidenav a {font-size: 18px;}
 }
 
-.logo {
-    position: absolute;
-    left: 0;
-    margin: 2em;
-
-    font-family: Poppins;
-
-    font-weight: bolder;
-    font-size: 18px;
-}
+/* .bread{
+    position: absoulte;
+    right: 0;
+    
+    padding: 25px;
+    font-size: 3.2em;
+} */
 
 .content {
     position: absolute;
@@ -314,11 +311,11 @@ img {
         width: 0%;
     }
     50%{
-        width: 440px;
+        width: 400px;
         left: 0%;
     }
     100%{
-        left: 440px;
+        left: 400px;
         width: 0%;
     }
 }
@@ -353,3 +350,76 @@ img {
     margin: 2em;
 
 }
+
+@media (max-width: 480px) {
+
+    .img { display: none; }
+    
+    #container {
+        position:relative;
+        width: 538px;
+        margin: 0 auto;
+    }
+
+    /* @media (max-width: 480px) {
+
+        .bread{ padding-top: 0%; }
+         */
+        /* #container {
+            position:relative;
+            width: 538px;
+            margin: 0 auto;
+        } */
+
+      
+            
+        @media (max-width: 480px) {
+
+            .desc 
+            { 
+               display: none;
+                
+
+            }
+            
+        @media (max-width: 480px) {
+
+            .link
+            {
+                margin-left: 60%;
+                margin-top: 15%;
+               
+                
+               
+                
+
+            }
+
+                
+        @media (max-width: 480px) {
+
+            .heading
+            { margin-left:45%;
+                border: 3px solid black;
+                padding: 25px;
+                margin-top: 10%;
+                width: 280px;
+                height: 250px;
+                
+               
+                
+
+            }
+                
+        @media (max-width: 480px) {
+
+            .loader ul li
+            { font-size:15px;
+                
+               
+                
+
+            }
+
+          
+        
