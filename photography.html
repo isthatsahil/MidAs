@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -72,16 +73,18 @@
             </div>
 
             <div class="media">
-                <ul>
-                    <li><ion-icon name="logo-facebook"></ion-icon></li>
-                    <li><ion-icon name="logo-instagram"></ion-icon></li>
-                    <li><ion-icon name="logo-twitter"></ion-icon></li>
-
-                </ul>
+                    <ul class="social-link">
+                            <li id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li id="gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li id="dribble"><a href="#"><i class="fab fa-github"></i></a></li>
+                          </ul>
             </div>
 
 
-
+            <div class="watch">
+                <ion-icon name="play"></ion-icon>
+            </div>
 
 
 
@@ -127,14 +130,22 @@
                     ease: Expo.easeInOut
                 });
 
-                
-                TweenMax.staggerfrom(".media ul li", 1.6, {
-                    delay:7,
+                TweenMax.from(".watch", 1.6, {
+                    delay:6.9,
+                    opacity: 0,
+                    y: 30,
+                    rotation: 90,
+                    ease: Expo.easeInOut
+                });
+                TweenMax.staggerfrom(".media .social-link ul li", 1.6, {
+                    delay:6.9,
                     opacity: 0,
                     y: 40,
                     ease: Expo.easeInOut
                 },0.2);
             </script>
+
+
 
 </body>
 </html>
