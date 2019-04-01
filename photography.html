@@ -38,16 +38,21 @@
         <div class="third-block"></div>
         <div class="menu">
             <ion-icon name="menu"></ion-icon>
+            
 
         </div>
+        <div class="bread" >
+        <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb" style="width:50%; background-color:#F0F0F0; font-size: 18px">
+                  <li class="breadcrumb-item" ><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">PhotoShoot</li>
+                </ol>
+              </nav>
+            </div>
+
         <div class="logo">
             <!-- <span>Explore</span> -->
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb" style="background:#F0F0F0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">PhotoShoot</li>
-              </ol>
-            </nav>
+            
         </div>
 
         <div class="content">
@@ -90,7 +95,7 @@
               <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
               <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
               <script type="text/javascript">
-                TweenMax.from(".logo", 1.6, {
+                TweenMax.from(".bread", 1.6, {
                     delay:6.4,
                     opacity: 0,
                     y: 30,
