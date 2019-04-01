@@ -80,7 +80,7 @@ section{
      left: 50%;
     transform: translate(-50%,-50%);
     color: #52c234;
-    padding: 30px 60px;
+    padding: 15px 30px;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -203,8 +203,13 @@ section{
     height: 100%;
   }
   #header h1{
-    letter-spacing: 0.5em;
-    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Montserrat',sans-serif;
+	font-size:2.2rem;
+	font-weight:400;
+	letter-spacing: 0.2rem;
+	margin:0 0 22px 0 ;
+	color:#fff;
   }
   #header p{
     text-transform: uppercase;
@@ -218,16 +223,14 @@ section{
 
 
   .navbar {
-    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
-    zoom: 0.8;
-    zoom: 80%;
+
     box-shadow: 2px 2px 5px #52c234;
 
     background: #f3f3f3; }
 
   .navbar .nav-item
   {
-      font-size: 1.4rem;
+      font-size: 1rem;
       padding-right: 1.4rem;
   }
 
@@ -266,7 +269,7 @@ section{
 }
 .service-list-col2 h4
 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 	color:#222222;
  font-size: 1.2rem;
 	margin:0 0 5px 0;
@@ -296,7 +299,7 @@ section{
 
 }
   #featured .featured-title h3{
-    font-family: 'Poiret One', cursive;
+      font-family: 'Poppins', sans-serif;
   }
 
 
@@ -324,7 +327,7 @@ section{
 /* Contact
 ---------------------------------*/
 .main-section.contact{
-	padding:90px 0 100px;
+	padding:90px 0 90px;
 
 }
 #contact{
@@ -784,6 +787,25 @@ border: none;
   }
 }
 
+
+/* Footer
+---------------------------------*/
+
+.footer{
+background:url(../image/pw_maze_black_2X.png) left top repeat;
+padding:35px 0 35px;
+}
+.footer-logo{
+margin:15px auto 35px;
+width: 76px;
+}
+.copyright{
+color:#cccccc;
+font-size:14px;
+font-family: 'Montserrat',sans-serif;
+display:block;
+text-align:center;
+}
 
 
 /* --------------------------------
