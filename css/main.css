@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     overflow-x:hidden;
+    background: #0c002b;
   }
 
 
@@ -266,6 +267,30 @@
 .service-list-col2{
 	overflow:hidden;
 }
+ /* .service-card{
+
+   background: #f3f3f3;
+ }
+ .service-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ transition: all 0.4s cubic-bezier(0.83, 0.56, 0.21, 0.26);
+}
+.service-card-1:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+transition: all 0.4s cubic-bezier(0.83, 0.56, 0.21, 0.26);
+}
+.service-card-2:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+transition: all 0.4s cubic-bezier(0.83, 0.56, 0.21, 0.26);
+}
+.service-card-3:hover {
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+transition: all 0.4s cubic-bezier(0.83, 0.56, 0.21, 0.26);
+} */
+/*
+
+
+
 
 /* --------------------------------
 ============= The End =============
